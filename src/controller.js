@@ -27,7 +27,7 @@ exports.addShow = function addShow(req, res) {
 };
 
 exports.removeShow = function removeShow(req, res) {
-  Show.remove(
+  Show.deleteOne(
     {
       id: req.query.id,
     },
