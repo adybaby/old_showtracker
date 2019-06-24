@@ -2,10 +2,10 @@
   "name": "showtracker_server",
   "version": "1.0.0",
   "description": "Show tracker server",
-  "main": "server.js",
+  "main": "server\\server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src\\server.js"
+    "start": "nodemon src\\server\\server.js"
   },
   "author": "",
   "license": "ISC",
