@@ -179,11 +179,13 @@ async function getShowCalendar() {
         }
       }
 
-      // sort the date list
       allEpisodes.sort((a, b) => {
         const dateA = new Date(a.firstAired);
         const dateB = new Date(b.firstAired);
-        return dateA - dateB;
+
+        return a.firstAired === b.firstAired
+          ? a.airedEpisodeNumber - b.airedEpisodeNumber
+          : dateA - dateB;
       });
 
       resolve(allEpisodes);
